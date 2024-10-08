@@ -42,6 +42,20 @@ body {
     text-transform: uppercase;
 }
 
+#home:hover {
+    color: #1A1A1A;
+    background-color: whitesmoke;
+}
+
+#about:hover {
+    color: #1A1A1A;
+    background-color: whitesmoke;
+}
+
+#contact:hover {
+    color: #1A1A1A;
+    background-color: whitesmoke;
+}
 
 h2 {
     display: flex;
@@ -76,6 +90,11 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.artwork-item img:hover {
+    background-color: #1a1a1add;
+    opacity: 0.2;
 }
 
 
