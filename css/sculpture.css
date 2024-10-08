@@ -9,7 +9,7 @@ p {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
     background-color: #302d2db7;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-top: 50px; 
@@ -81,8 +81,13 @@ h3 {
     justify-content: left;
 }
 
+.footer {
+    border-top: 1px solid #ddd ;
+    position: static;
+    margin-top: 50px;
+}
 
-.footer-text {
-    color: aliceblue;
+h4 {
+    color: whitesmoke;
     text-align: center;
 }
