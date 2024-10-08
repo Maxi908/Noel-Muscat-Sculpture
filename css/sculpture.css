@@ -1,10 +1,8 @@
-
 p {
     display: flex;
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
-
 }
 
 
@@ -24,10 +22,20 @@ p {
     overflow: hidden;
 }
 
-.art-img {
-    width: 50%;
-    height: auto;
+.artwork-item img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+.new-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
 }
 
 
@@ -44,21 +52,21 @@ p {
     padding: 20px;
     background-color: #302d2db7;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-top: 50px; 
+    margin-top: 50px; /* Adjust this value as needed */
 }
 
 
-
+/* Image and Details Container */
 .image-details-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-
+/* Image Section */
 .image-section {
     position: relative;
-    width: 40%;
+    width: 55%;
 }
 
 .art-image {
@@ -67,7 +75,7 @@ p {
     border: 1px solid #ddd;
 }
 
-
+/* Navigation Buttons */
 .nav {
     position: absolute;
     top: 50%;
@@ -87,7 +95,7 @@ p {
     right: 0;
 }
 
-
+/* Details Section */
 .details-section {
     width: 40%;
     padding-left: 20px;
@@ -97,7 +105,7 @@ p {
     margin-bottom: 10px;
 }
 
-
+/* Description Section */
 .description-section {
     margin-top: 20px;
 }
@@ -108,8 +116,12 @@ p {
 
 .description-section p {
     line-height: 1.5;
-    font-style: italic;
 }
+
+h3 {
+    justify-content: left;
+}
+
 
 .footer-text {
     color: aliceblue;
