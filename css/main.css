@@ -22,11 +22,17 @@ body {
     font-size: 30px;
     text-align: center;
     color: whitesmoke;
+    text-decoration: none;
     opacity: 0.9;
     margin: 0;
     position: absolute; 
     left: 50%;
     transform: translateX(-50%); 
+}
+
+#heading, #heading:visited {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .nav-links {
