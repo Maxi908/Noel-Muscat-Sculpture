@@ -12,13 +12,14 @@ body {
 main {
     flex:1;
     padding: 20px;
+    min-height: 100%;
 }
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 10px 20px;
     border-bottom: 1px solid #ddd;
     position: relative; 
 }
@@ -32,10 +33,8 @@ main {
     color: whitesmoke;
     text-decoration: none;
     opacity: 0.9;
-    margin: 0;
-    position: absolute; 
-    left: 50%;
-    transform: translateX(-50%); 
+    margin: 0; 
+    flex-grow: 1;
 }
 
 #heading, #heading:visited {
@@ -44,7 +43,9 @@ main {
 }
 
 .nav-links {
-    position: absolute; 
+    display: flex;
+    align-items: center;
+    position: absolute;
     right: 10px; 
 }
 
@@ -56,21 +57,10 @@ main {
     text-transform: uppercase;
 }
 
-#home:hover {
+.nav-links a:hover {
     color: #1A1A1A;
     background-color: whitesmoke;
 }
-
-#about:hover {
-    color: #1A1A1A;
-    background-color: whitesmoke;
-}
-
-#contact:hover {
-    color: #1A1A1A;
-    background-color: whitesmoke;
-}
-
 
 
 h2 {
@@ -115,7 +105,7 @@ p {
 
 .footer {
     border-top: 1px solid #ddd ;
-    position:relative;
+    position: fixed;
     bottom:0;
     width: 100%;
     text-align: center;
@@ -124,4 +114,64 @@ p {
 h4 {
     color: whitesmoke;
     text-align: center;
+}
+
+/* Media Queries */
+
+/* For tablets (screen width 768px and smaller) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+}
+
+/* For mobile phones (screen width 480px and smaller) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+        margin: 0 8px;
+    }
+
+    .artworks {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .artwork-item {
+        width: 150px;
+        height: 150px;
+        margin: 10px 0;
+    }
+
+    .footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
 }
