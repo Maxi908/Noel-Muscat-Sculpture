@@ -5,7 +5,6 @@ p {
     padding-right: 20px;
 }
 
-
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -15,25 +14,21 @@ p {
     margin-top: 50px;
 }
 
-
 .image-details-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-
 .image-section {
     position: relative;
-    width: 55%;
+    width: 55%; /* Default width for larger screens */
 }
-
 
 .art-image {
     width: 100%;
     height: auto;
 }
-
 
 .nav {
     position: absolute;
@@ -60,17 +55,14 @@ p {
     color: rgba(0, 0, 0, 0.6);
 }
 
-
-
 .details-section {
-    width: 40%;
+    width: 40%; /* Default width for larger screens */
     padding-left: 20px;
 }
 
 .details-section p {
     margin-bottom: 10px;
 }
-
 
 .description-section {
     margin-top: 20px;
@@ -144,4 +136,61 @@ h4 {
     cursor: pointer;
     max-width: 100%; /* Ensure images in the gallery fit within their container */
     height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries */
+
+/* For tablets (screen width 768px and smaller) */
+@media (max-width: 768px) {
+    .image-details-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center align the items */
+    }
+
+    .image-section,
+    .details-section {
+        width: 100%; /* Full width on smaller screens */
+        padding-left: 0; /* Remove left padding */
+        padding-right: 0; /* Remove right padding */
+    }
+
+    .details-section {
+        margin-top: 20px; /* Add spacing between sections */
+    }
+}
+
+/* For mobile phones (screen width 480px and smaller) */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px; /* Smaller padding for mobile */
+    }
+
+    h3 {
+        font-size: 18px; /* Smaller font size for headers */
+    }
+
+    .details-section p {
+        font-size: 14px; /* Smaller font size for paragraph text */
+    }
+
+    .description-section h3 {
+        font-size: 16px; /* Smaller font size for description headers */
+    }
+
+    .nav {
+        padding: 8px; /* Smaller padding for navigation buttons */
+    }
+
+    .nav.left, .nav.right {
+        font-size: 14px; /* Smaller font size for navigation */
+    }
+
+    .footer {
+        margin-top: 20px; /* Less margin above the footer */
+        padding: 10px; /* Less padding for footer */
+    }
+
+    h4 {
+        font-size: 14px; /* Smaller footer heading */
+    }
 }
