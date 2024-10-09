@@ -54,6 +54,12 @@ p {
     right: 0;
 }
 
+.nav.left:hover, .nav.right:hover {
+    background-color: white;
+    color: rgba(0,0,0,0.6);
+}
+
+
 
 .details-section {
     width: 40%;
