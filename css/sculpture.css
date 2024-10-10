@@ -5,6 +5,12 @@ p {
     padding-right: 20px;
 }
 
+.details-section p {
+    text-align: left;
+    line-height: 1.6; 
+}
+
+
 .container {
     max-width: 900px;
     margin: 0 auto;
