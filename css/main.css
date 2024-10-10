@@ -209,70 +209,9 @@ body {
  }
 
 
- /* For tablets (iPads) between 769px and 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-   .navbar {
-       padding: 15px 30px; /* More padding for iPads */
-       justify-content: space-between;
-   }
-
-   .heading {
-       font-size: 28px; /* Slightly larger heading size for iPads */
-   }
-
-   .nav-links a {
-       font-size: 16px; /* Make the navigation links slightly larger */
-       margin: 0 15px;
-   }
-
-   .artworks {
-       display: grid;
-       grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns for artwork items */
-       gap: 20px;
-   }
-
-   .artwork-item {
-       width: auto; /* Ensure the items adjust fluidly */
-       height: auto;
-   }
-
-   .artwork-item img {
-       width: 100%; /* Make sure images fill their containers */
-       height: auto; /* Keep the aspect ratio */
-   }
-
-   .footer {
-       font-size: 16px;
-       padding: 20px;
-   }
-}
+ 
 
 
 
-/* For larger tablets and small laptops between 1025px and 1280px */
-@media (min-width: 1025px) and (max-width: 1280px) {
-   .navbar {
-       padding: 20px 40px; /* More padding for larger screens */
-   }
-
-   .heading {
-       font-size: 30px; /* Larger heading for wider screens */
-   }
-
-   .nav-links a {
-       font-size: 18px;
-       margin: 0 20px;
-   }
-
-   .artworks {
-       grid-template-columns: repeat(3, 1fr); /* Switch to 3 columns for artwork items */
-       gap: 25px;
-   }
-
-   .footer {
-       font-size: 18px;
-       padding: 25px;
-   }
-}
 
  
